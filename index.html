@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="img/dp.jpg" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="first-container.css" />
+    <link rel="stylesheet" href="second-container.css" />
+    <link rel="stylesheet" href="third-container.css" />
+    <script
+      src="https://kit.fontawesome.com/483187a7c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav">
+      <p>Jherold Mansueto</p>
+      <ul>
+        <li><a href="#home">Home </a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+    <div class="home-container" id="home">
+      <div class="introduce animate__animated animate__fadeInDown">
+        <div class="names">
+          <p>I'm <span class="f-name">Carl Jherold</span>.</p>
+          <p>An Aspiring</p>
+          <span class="auto-type"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-container" id="about">
+      <!--about container -->
+      <div class="about-main-container">
+        <div class="info animate__animated animate__fadeInLeft">
+          <img class="dp-img" src="img/dp.jpg" />
+
+          <p class="info-name">
+            My Name is <span class="name">Carl Jherold</span>
+          </p>
+          <p
+            style="
+              font-family: Arial, Helvetica, sans-serif;
+              text-align: center;
+            "
+          >
+            A Student from <span class="uep">U</span>rdaneta
+            <span class="uep">C</span>ity <span class="uep">U</span>niversity
+            taking up the Bachelor Of Science In Computer Engineering. I live in
+            Esmeralda, Balungao, Pangasinan. My Dream is to become a Successful
+            Software Engineer.
+          </p>
+        </div>
+
+        <div class="skills animate__animated animate__fadeInRight">
+          <p>SKILLS</p>
+          <div class="skill-sets">
+            <label for="disabledRange" class="form-label">HTML</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              maximum="100"
+              value="80"
+              id="disabledRange"
+              disabled=""
+            />
+            <label for="disabledRange" class="form-label">CSS</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              maximum="100"
+              value="50"
+              id="disabledRange"
+              disabled=""
+            />
+            <label for="disabledRange" class="form-label">PHP</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              maximum="100"
+              value="40"
+              id="disabledRange"
+              disabled=""
+            />
+            <label for="disabledRange" class="form-label">C#</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              maximum="100"
+              value="60"
+              id="disabledRange"
+              disabled=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--about container -->
+
+    <div class="skills-container" id="skills">
+      <!--project container-->
+      <div class="projects">
+        <p class="project-title">My Works</p>
+        <div class="box-project-container">
+          <div class="box-project animate__animated animate__fadeIn">
+            <div class="box-container">
+              <img src="img/pexels-pixabay-270632.jpg" alt="" />
+              <p>Web Designing</p>
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate voluptas, voluptatum maiores facere voluptatibus
+                atque quod rem eum ipsam eveniet.
+              </p>
+            </div>
+          </div>
+          <div class="box-project animate__animated animate__fadeIn">
+            <div class="box-container">
+              <img src="img/pexels-markus-spiske-4439901.jpg" alt="" />
+
+              <p>Php Database</p>
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate voluptas, voluptatum maiores facere voluptatibus
+                atque quod rem eum ipsam eveniet.
+              </p>
+            </div>
+          </div>
+          <div class="box-project animate__animated animate__fadeIn">
+            <div class="box-container">
+              <img src="img/pexels-rodrigo-santos-3888151.jpg" alt="" />
+
+              <p>C#</p>
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate voluptas, voluptatum maiores facere voluptatibus
+                atque quod rem eum ipsam eveniet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--project container-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#about",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x707f41,
+        backgroundColor: 0x0,
+        showLines: false,
+      });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Student .", "Computer Engineer."],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-container p {
+  color: greenyellow;
+}
+.projects {
+  height: 80vh;
+  width: 85vw;
+}
+.project-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.box-project {
+  border: solid 5px grey;
+  content: "";
+  height: 400px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-project-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box-project img {
+  height: 200px;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+.box-container p {
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+.box-container a {
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.img-container {
+  height: 180px;
+  width: 300px;
+  background-color: rgb(70, 64, 64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-project p {
+  margin-top: 15px;
+}
+footer {
+  content: "";
+  flex-wrap: wrap;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30px;
+  width: 700px;
+  flex-wrap: wrap;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  input {
+    width: 300px;
+  }
+  .skills p {
+    margin-top: 90px;
+  }
+  .hobbies {
+    margin-top: 1500px;
+  }
+  .projects {
+    margin-top: 1900px;
+  }
+  footer {
+    margin-top: 1900px;
+  }
+  footer p {
+    visibility: hidden;
+  }
+
+  .box,
+  .box-project {
+    margin-bottom: 20px;
+  }
+  .nav-container {
+    height: 90px;
+  }
+  .names p,
+  .auto-type {
+    font-size: 40px;
+  }
+  .about-main-container {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  input {
+    width: 300px;
+  }
+  .skills p {
+    margin-top: 100px;
+  }
+  .hobbies {
+    margin-top: 1400px;
+  }
+  .projects {
+    margin-top: 2020px;
+  }
+  footer {
+    margin-top: 1710px;
+  }
+  .box,
+  .box-project {
+    margin-bottom: 20px;
+  }
+  .skill-sets {
+    margin-bottom: 20px;
+  }
+}

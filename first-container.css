@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@700&family=Open+Sans:wght@300;800&family=Oswald:wght@700&family=Roboto:wght@500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: black;
+}
+.home-container {
+  height: 660px;
+  border: solid 1px black;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-right: 80px;
+}
+.nav ul li {
+  list-style: none;
+  padding: 30px;
+  color: white;
+  font-family: "Black Ops One", cursive;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav p {
+  margin-left: 80px;
+  color: white;
+  font-family: "Black Ops One", cursive;
+}
+.home-container,
+.about-container,
+.skills-container {
+  z-index: 0;
+  height: 655px;
+  border: solid 1px black;
+}
+
+.home-container {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-container {
+  background-color: black;
+}
+a:hover {
+  color: red;
+}
+.introduce {
+  color: white;
+  width: 70vw;
+  height: 70vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.names p,
+.auto-type {
+  font-size: 50px;
+  font-family: "Black Ops One", cursive;
+}
+
+.f-name,
+.auto-type {
+  color: greenyellow;
+}

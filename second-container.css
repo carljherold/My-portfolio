@@ -1,0 +1,77 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-main-container img {
+  border-radius: 50%;
+}
+.about-main-container {
+  width: 80vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-container {
+  flex-wrap: wrap;
+}
+.dp-img {
+  width: 300px;
+}
+.info p {
+  color: white;
+}
+.info {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.name,
+.uep {
+  color: greenyellow;
+}
+.info-name {
+  font-family: "Black Ops One", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+.uep {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.skills p {
+  color: white;
+  font-family: "Black Ops One", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+.skills {
+  margin-top: 70px;
+  width: 490px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-top: 20px;
+  color: white;
+  font-family: "Black Ops One", cursive;
+}
+.skill-sets {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  width: 400px;
+}
